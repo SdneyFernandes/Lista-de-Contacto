@@ -33,7 +33,7 @@ const Formulario = () => {
   };
 
   return (
-    <Card onSubmit={cadastrarContatoHandler}>
+    <Card>
       <Titulo>Meus Contatos</Titulo>
       <LabelContato htmlFor="nome">Nome:</LabelContato>
       <InputContato value={nome} onChange={(evento) => setNome(evento.target.value)} type="text" placeholder="Nome" />
@@ -43,7 +43,7 @@ const Formulario = () => {
       <InputContato value={tel} onChange={(evento) => setTel(evento.target.value)} type="tel" placeholder="Telefone" />
       <DescricaoContato value={descricao} onChange={(evento) => setDescricao(evento.target.value)} placeholder="Descricao do Contato" />
       <BarraAcoes>
-        <BotaoSalvar type="submit">Cadastrar</BotaoSalvar>
+        <BotaoSalvar type="submit" onClick={(event) => cadastrarContatoHandler(event)} >Cadastrar</BotaoSalvar>
         <BotaoCancelarRemover type="button" onClick={() => navigate("/")}>Regressar</BotaoCancelarRemover>
       </BarraAcoes>
     </Card>

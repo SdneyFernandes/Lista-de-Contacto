@@ -6,6 +6,7 @@ const EstiloGlobal = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  font-family: "Work Sans", sans-serif;
 }
 `
 export const Container = styled.div`
@@ -38,7 +39,7 @@ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 border-radius: 16px;
 padding-left: 30px;
 width: 65vw;
-
+margin-bottom: 20px;
 `
 
 export const BarraAcoes = styled.div`
@@ -49,7 +50,8 @@ export const InputContato = styled.input`
 display: flex;
 font-size: 16px;
 border: none;
-padding: 5px;
+padding: 10px;
+Width: 50%;
 `
 
 export const LabelContato = styled.label`
